@@ -14,23 +14,23 @@ class _ListDataState extends State<ListData> {
       
       name: 'Flutter is easy',
       author: 'Pattaraporn',
-      cover: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80',
+      cover: 'assets/images/python.jpg',
     ),
     Book(
       author: 'Micheal',
       name: 'HTML and CSS',
-      cover: 'https://iotvnaw69daj.i.optimole.com/cb:n2y9~6666f/w:325/h:486/q:mauto/dpr:2.0/f:avif/https://www.codeinwp.com/wp-content/uploads/2021/04/HTML-and-CSS-Duckett-cover.jpg',
+      cover: 'assets/images/python.jpg',
       
     ),
     Book(
       name: 'Data Science',
       author: 'Somchai',
-      cover: 'https://lh4.googleusercontent.com/E6X6IODHtiTQrNl1-4ir12t4xw-PZKCNsnJPWa2-q3gsStWcjI7gDrT-k3GG7SkA7GqKBV3z8p1DHSHaz9gsI2UTAdsAMXRKx7EAmozrruuB1qblMtC6VJvDHyWnbwXPUvXOHhxkhRWyVE160lKb5ypivvHus6GsRC31hRW4Wo2x4A4ccGEThd84jQ',
+      cover: 'assets/images/python.jpg',
     ),
     Book(
       name: 'React Native',
       author: 'Peter',
-      cover: 'https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4842-3939-1?as=webp',
+      cover: 'assets/images/python.jpg',
       
     ),
   ];
@@ -55,9 +55,9 @@ class _ListDataState extends State<ListData> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Expanded(
-                  child: FadeInImage.assetNetwork(
-                    placeholder: 'assets/images/python.png', // รูปภาพสำหรับการโหลด
-                    image: books[index].cover,
+                  child: Image.asset(
+                   
+                     books[index].cover,
                     fit: BoxFit.cover,
                   ),
                 ),
