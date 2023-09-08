@@ -4,4 +4,4 @@
 A new Flutter project.
 
 
-<img src="ex6.png" width="300" height="550">
+<img src="ex06.png" width="300" height="550">
