@@ -19,7 +19,7 @@ class BookCard extends StatelessWidget {
         children: [
           AspectRatio(
             aspectRatio: 1.0, // ควบคุมสัดส่วนของรูปภาพ
-            child: Image.network(
+            child: Image.asset(
               book.cover,
               fit: BoxFit.cover,
             ),
